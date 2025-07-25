@@ -1,18 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
+  <PropertyGroup Label="Main">
     <TargetFramework>net6.0</TargetFramework>
-    <Version>1.0.0</Version>
+    <NoWarn>CS1591;IDE0130</NoWarn>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Label="Package">
+    <Version>1.0.0</Version>
     <Authors>DCoats</Authors>
     <Company>Rivet</Company>
     <Copyright>Copyright (c) Rivet 2023</Copyright>
-    <Description>--- ADD DESCRIPTION ---</Description>
+    <Description>Razor component (Blazor component) related functionality.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <RepositoryUrl>https://github.com/SafetyCone/R5T.F0100.git</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\R5T.L0066\source\R5T.L0066\R5T.L0066.csproj" />
     <ProjectReference Include="..\..\..\R5T.NG0018\source\R5T.NG0018\R5T.NG0018.csproj" />
     <ProjectReference Include="..\..\..\R5T.T0132\source\R5T.T0132\R5T.T0132.csproj" />
   </ItemGroup>
